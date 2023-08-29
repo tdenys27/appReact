@@ -1,0 +1,31 @@
+.order {
+    border: 2px solid $black;
+    border-radius: $xlRadius;
+    padding: 25px;
+    @media screen and (min-width: $smWidth) {
+        margin-top: 85px;
+    }
+    &-title {
+        font-size: $textBigSize;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+    &-total {
+        margin-bottom: 40px;
+    }
+    &-total__title {
+        font-size: $textBigMediumSize;
+    }
+    &-total__result {
+        font-size: $textBigSize;
+        font-weight: 600;
+    }
+    .white-input {
+        border: 1px solid $black;
+        padding-left: 20px;
+    }
+    .btn-success {
+        border-radius: $xlRadius;
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.category {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    &-img {
+        height: 350px;
+        display: block;
+        overflow: hidden;
+        margin-bottom: 20px;
+        @media screen and (max-width: $xsWidth) {
+            height: 200px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &-name {
+        font-size: $textMediumSize;
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        color: $black;
+        text-decoration: none;
+        &:hover {
+            color: $green;
+        }
+    }
+}

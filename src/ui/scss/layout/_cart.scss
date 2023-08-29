@@ -1,0 +1,79 @@
+.cart {
+    margin-bottom: 40px;
+    &-buttons {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &-back__link {
+        color: $black;
+        text-decoration: none;
+        position: relative;
+        padding: 10px 30px 10px 10px;
+        display: inline-flex;
+        &:hover {
+            opacity: 0.7;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 15px;
+            height: 15px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='none'%3E%3Cpath d='M4.49653 1.19763C4.37465 1.19763 4.26567 1.27146 4.21879 1.38396C4.17309 1.49763 4.20004 1.62654 4.28793 1.71208L10.0758 7.49998L4.28793 13.2879C4.20942 13.3629 4.17778 13.4754 4.2059 13.5797C4.23286 13.6851 4.31489 13.7672 4.42036 13.7941C4.52465 13.8222 4.63715 13.7906 4.71215 13.7121L10.7122 7.71208C10.8293 7.5949 10.8293 7.40505 10.7122 7.28787L4.71215 1.28787C4.6559 1.22927 4.57856 1.19763 4.49653 1.19763Z' fill='black'/%3E%3C/svg%3E") no-repeat 0 0/contain;
+        }
+    }
+    &-product__item {
+        position: relative;
+        border-top: 1px solid $darkGray;
+        padding: 30px 30px 30px 0;
+        &:last-child {
+            border-bottom: 1px solid $darkGray;
+            margin-bottom: 20px;
+        }
+    }
+    &-product__img {
+        max-width: 140px;
+        @media screen and (max-width: $mdWidth) {
+            margin-bottom: 20px;
+        }
+    }
+    &-product__title {
+        font-size: $textMediumSize;
+        font-weight: 500;
+        color: $black;
+        text-decoration: none;
+        margin-bottom: 30px;
+        display: block;
+        @media screen and (max-width: $smWidth) {
+            margin-bottom: 15px;
+        }
+        &:hover {
+            color: $green;
+        }
+    }
+    &-product__remove {
+        position: absolute;
+        right: -7px;
+        top: 25px;
+        width: 30px;
+        height: 30px;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30' fill='none'%3E%3Cpath d='M8.6438 7.8L7.80005 8.64375L14.175 15L7.80005 21.3563L8.6438 22.2L15.0375 15.8438L21.4125 22.2L22.2563 21.3563L15.8813 15L22.2563 8.64375L21.4125 7.8L15.0375 14.1563L8.6438 7.8Z' fill='black'/%3E%3C/svg%3E") no-repeat 0 0/contain;
+        text-indent: -9999px;
+        color: transparent;
+        overflow: hidden;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    &-product__price {
+        font-size: $textBiggestSize;
+        font-weight: 600;
+    }
+    &-product__old-price {
+        color: $gray;
+        text-decoration: line-through;
+        font-weight: 500;
+    }
+}

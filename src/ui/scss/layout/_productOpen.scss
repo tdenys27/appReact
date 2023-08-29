@@ -1,0 +1,36 @@
+.product-open {
+    margin-bottom: 50px;
+    .title {
+        margin-bottom: 40px;
+    }
+    &__image {
+        margin-bottom: 20px;
+    }
+    &__description {
+        line-height: 1.4;
+        border-top: 1px dashed $darkGray;
+        padding-top: 30px;
+    }
+    &__description-title {
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .product-cur__price {
+        font-size: $titleSmallSize;
+        font-weight: 600
+    }
+    .product-add__cart {
+        position: static;
+        opacity: 1;
+        font-weight: 700;
+        padding: 15px 30px;
+        margin: 40px 0;
+        width: 100%;
+        font-size: $textBigSize;
+        @media screen and (max-width: $xsWidth) {
+            padding: 10px 20px;
+            margin: 20px 0 40px;
+            font-size: $textMediumSize;
+        }
+    }
+}

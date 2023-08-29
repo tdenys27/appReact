@@ -1,0 +1,67 @@
+.page {
+    margin-bottom: 30px;
+    h1, h2, h3, h4, h5, h6 {
+        margin: 35px 0 15px;
+        font-weight: 700;
+    }
+    h1 {
+        font-size: $titleDefaultSize;
+    }
+    h2 {
+        font-size: $textBiggestSize;
+    }
+    h3 {
+        font-size: $textBigSize;
+    }
+    h4 {
+        font-size: $textBigMediumSize;
+    }
+    h5 {
+        font-size: $textMediumSize;
+    }
+    h6 {
+        font-size: $defaultSize;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    blockquote {
+        background: $green;
+        padding: 15px;
+        margin-bottom: 20px;
+        color: $white;
+        border-radius: $radius;
+        a {
+            color: $white;
+            &:hover {
+                color: $black;
+            }
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    ul {
+        padding-left: 25px;
+        list-style: disc;
+        margin-bottom: 10px;
+        li {
+            list-style: disc;
+            margin-bottom: 10px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $green;
+        font-weight: 600;
+        &:hover {
+            color: $black;
+        }
+    }
+    img {
+        display: block;
+        margin: 0 auto 20px;
+    }
+}

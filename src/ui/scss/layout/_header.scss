@@ -1,0 +1,13 @@
+.header {
+    background: $white;
+    .logo {
+        max-width: 72px;
+        display: block;
+        @media screen and (max-width: $xxsWidth) {
+            max-width: 40px;
+        }
+    }
+    & > .container {
+        display: block;
+    }
+}

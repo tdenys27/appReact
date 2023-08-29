@@ -1,0 +1,30 @@
+.quantity {
+    display: inline-flex;
+    justify-content: space-between;
+    border: 1px solid $black;
+    border-radius: $radius;
+    margin: 10px 0;
+    min-width: 130px;
+    &-btn {
+        padding: 4px;
+        width: 44px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        rect {
+            transition: all 0.3s;
+        }
+        &:hover {
+            rect {
+                fill: $green;
+            }
+        }
+    }
+    &-num {
+        padding: 10px;
+        font-weight: 600;
+    }
+}

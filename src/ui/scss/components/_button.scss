@@ -1,0 +1,76 @@
+.btn {
+    font-family: $defaultFont;
+    font-size: $defaultSize;
+    padding: 11px 30px;
+    border-radius: 0.375rem;
+    border-radius: $radius;
+    @media screen and (max-width: $xsWidth) {
+        padding: 5px 10px;
+    }
+}
+.btn-success {
+    font-weight: 700;
+    background: $green;
+}
+.btn-big-success {
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: $textBigSize;
+    @media screen and (max-width: $xsWidth) {
+        padding: 10px 20px;
+        font-size: $textMediumSize;
+    }
+}
+.white-button {
+    padding: 15px 30px;
+    color: $black;
+    background: $white;
+    display: inline-flex;
+    font-weight: 700;
+    font-size: $textBigSize;
+    @media screen and (max-width: $xsWidth) {
+        padding: 10px 20px;
+        font-size: $textMediumSize;
+    }
+    &:hover {
+        background: $lightGreen;
+    }
+}
+.white-transparent-button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: $white;
+    border: 2px solid $white;
+    border-radius: $xlRadius;
+    background: transparent;
+    display: block;
+    font-weight: 700;
+    font-size: $textBigSize;
+    @media screen and (max-width: $xsWidth) {
+        padding: 10px 15px;
+        font-size: $textMediumSize;
+    }
+    &:hover {
+        color: $black;
+        background: $white;
+    }
+}
+.btn-dark-border {
+    padding: 7px;
+    font-size: $textSmallSize;
+    font-weight: 700;
+    border: 1px solid $gray;
+    color: $gray;
+    border-radius: 0;
+    background: transparent;
+    &:hover {
+        border-color: $black;
+        color: $black;
+    }
+}
+.btn-danger {
+    padding: 5px 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

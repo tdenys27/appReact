@@ -1,0 +1,43 @@
+.filter {
+    margin-bottom: 20px;
+    label {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    input, 
+    select {
+        border: 1px solid $black;
+        border-radius: $radius;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    input[type="checkbox"] {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #000;
+        &:checked {
+            background: green;
+        }
+    }
+    input[type="number"] {
+        @media screen and (max-width: $xsWidth) {
+            width: 100%;
+        }
+    }
+    &-label {
+        margin-bottom: 10px;
+    }
+    &-label__name {
+        margin-right: 35px;
+        display: inline-flex;
+    }
+    .first-price {
+        margin-right: 15px;
+        @media screen and (max-width: $xsWidth) {
+            margin-right: 0;
+        }
+    }
+}

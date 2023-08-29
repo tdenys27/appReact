@@ -1,0 +1,25 @@
+.sale-form {
+    padding: 27px;
+    background: $geenGradien;
+    &__img {
+        max-width: 422px;
+    }
+    &__title,
+    &__description {
+        color: $white;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: $titleBigSize;
+        @media screen and (max-width: $xsWidth) {
+            font-size: $titleSmallSize;
+        }
+    }
+    &__description {
+        font-size: $titleSmallSize;
+        margin-bottom: 40px;
+        @media screen and (max-width: $xsWidth) {
+            font-size: $textBiggestSize;
+        }
+    }
+}

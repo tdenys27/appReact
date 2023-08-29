@@ -1,0 +1,32 @@
+.contact {
+    &-sub__title {
+        font-weight: 700;
+        font-size: $textBigSize;
+        margin: 30px 0 10px;
+    }
+    &-phone,
+    &-address {
+        color: $black;
+        margin-bottom: 20px;
+        display: block;
+        &:hover {
+            color: $green;
+        }
+    }
+    &-phone {
+        font-weight: 700;
+        font-size: $textBigBiggestSize;
+        text-decoration: none;
+    }
+    &-address {
+        font-weight: 500;
+        font-size: $textBigSize;
+    }
+    &-sub__text {
+        display: block;
+    }
+    &-info {
+        font-weight: 700;
+        font-size: $textMediumSize;
+    }
+}

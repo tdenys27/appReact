@@ -1,0 +1,41 @@
+.banner-sale {
+    background: $turquoise;
+    position: relative;
+    overflow: hidden;
+    padding: 130px 0;
+    @media screen and (max-width: $mdWidth) {
+        padding: 100px 0;
+    }
+    @media screen and (max-width: $xsWidth) {
+        padding: 50px 0;
+    }
+    &__content {
+        position: relative;
+        z-index: 1  ;
+    }
+    &__title,
+    &__sub-title {
+        color: $white;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: $titleBigSize;
+        @media screen and (max-width: $xsWidth) {
+            font-size: $textBigBiggestSize;
+        }
+    }
+    &__sub-title {
+        font-size: $titleSmallSize;
+        margin-bottom: 60px;
+        @media screen and (max-width: $xsWidth) {
+            font-size: $textBiggestSize;
+            margin-bottom: 30px;
+        }
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 50%;
+    }
+}
